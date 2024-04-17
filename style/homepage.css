@@ -1,0 +1,83 @@
+:root {
+  --white: 0, 0%, 100%; /* #FFFFFF */
+  --background: 0, 0%, 96%; /* #F5F5F5 */
+  --background-foreground: 235, 14%, 22%; /* #282938 */
+  --primary: 238, 68%, 18%; /* #1C1E53 */
+  --secondary: 45, 89%, 75%; /* #FCD980 */
+  --primary-foreground: 0, 0%, 100%; /* #FFFFFF */
+  --secondary-foreground: 235, 14%, 22%; /* #282938 */
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: hsl(var(--background-foreground));
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: inline-flex;
+  background-color: hsl(var(--background));
+}
+
+#auth-hero {
+  display: contents;
+  max-width: 50%;
+  position: relative;
+}
+
+#auth-hero .background {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#auth-hero .content {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1;
+  padding: 6.5rem 4rem;
+  color: hsl(var(--primary-foreground));
+  background-color: hsla(var(--primary), 0.7);
+}
+
+#auth-hero .content .title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.6;
+}
+
+.link {
+  color: hsl(var(--primary-foreground));
+}
+
+.link-primary {
+  color: hsl(var(--primary));
+}
+
+.link,
+.link-primary {
+  text-decoration: underline;
+}
+
+.link:hover,
+.link-primary:hover {
+  text-decoration: none;
+}
+
+.text-center {
+  margin: 500px;
+  text-align: center;
+} 
